@@ -1,38 +1,39 @@
+
 .xdisplayname-container {
-  text-align: left;
-  max-width: 320px;
+	text-align: left;
+	max-width: 400px;
 }
 
 .xdisplayname-title {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
+	text-align: left;
 }
 
 .xdisplayname-form-row {
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
 }
 
 .xdisplayname-label {
-  min-width: 90px;
-  margin-right: 8px;
+	min-width: 90px;
+	margin-right: 8px;
 }
 
 .xdisplayname-input {
-  flex: 1;
+	flex: 1;
 }
 
 .xdisplayname-submit {
-  margin-bottom: 16px;
+	margin-bottom: 16px;
+	text-align: left;
 }
 
 .xdisplayname-fullname-row {
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
+	margin-top: 12px;
+	text-align: left;
 }
 
 .xdisplayname-fullname-label {
-  font-weight: bold;
-  margin-right: 8px;
+	font-weight: bold;
 }
