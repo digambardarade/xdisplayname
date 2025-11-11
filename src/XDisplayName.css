@@ -1,0 +1,38 @@
+.xdisplayname-container {
+  text-align: left;
+  max-width: 320px;
+}
+
+.xdisplayname-title {
+  margin-bottom: 20px;
+}
+
+.xdisplayname-form-row {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.xdisplayname-label {
+  min-width: 90px;
+  margin-right: 8px;
+}
+
+.xdisplayname-input {
+  flex: 1;
+}
+
+.xdisplayname-submit {
+  margin-bottom: 16px;
+}
+
+.xdisplayname-fullname-row {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.xdisplayname-fullname-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
