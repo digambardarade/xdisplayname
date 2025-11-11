@@ -10,7 +10,8 @@ function XDisplayName() {
   const [displayName, setDisplayName] = useState('');
   const [error, setError] = useState('');
 
-  const nameRegex = /^[A-Za-z ]+$/;
+  // Allow any character in name (no validation)
+  // const nameRegex = /^[A-Za-z ]+$/;
 
   const getDisplayName = (first, last) => `${first} ${last}`.trim();
 
@@ -18,10 +19,10 @@ function XDisplayName() {
     if (e) e.preventDefault();
     setError('');
     // If either field is empty or invalid, do not submit
-    if (!firstName || !lastName || !nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+    if (!firstName || !lastName) {
       setSubmitted(false);
       setDisplayName('');
-      setError('Names must only contain letters and spaces.');
+      setError('Both fields are required.');
       return false;
     }
     setDisplayName(getDisplayName(firstName, lastName));
@@ -69,8 +70,7 @@ function XDisplayName() {
         )}
         {submitted && (
           <div className="xdisplayname-fullname-row">
-            <span className="xdisplayname-fullname-label">Full Name :</span>
-            <span>{displayName}</span>
+            <span className="xdisplayname-fullname-label">Full Name: {displayName}</span>
           </div>
         )}
       </form>
